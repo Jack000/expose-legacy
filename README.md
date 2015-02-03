@@ -16,10 +16,10 @@ how to use:
 
 content management:
 
-store photos in folders named 01, 02, etc..
+1. store photos in folders named 01, 02, etc..
 
-put photo in the folder, name it full.jpg
+2. put photo in the folder, name it full.jpg
 
-put a text file in the folder, name it post.txt
+3. put a text file in the folder, name it post.txt
 
-see example files for post.txt formatting. It's just markdown.
+4. see example files for post.txt formatting. It's just markdown.
