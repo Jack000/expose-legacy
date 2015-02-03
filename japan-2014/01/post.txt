@@ -1,0 +1,13 @@
+---
+top: 65
+left: 25
+width: 50
+height: 40
+polygon:30 0,70 0,100 100,0 100
+---
+
+Despite the crowded streets there is little chaos. Civility is one of the admirable qualities of Japanese culture.
+
+<br />
+
+As there are virtually no garbage bins, trash is taken home. It is unclear why public trash cans do not exist in Japan - some say they were removed after a rash of terrorist attacks in the 90s. Perhaps people simply accept a kind of personal responsibility for the refuse they generate.

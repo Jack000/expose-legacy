@@ -1,0 +1,10 @@
+---
+top: 70
+left: 50
+width: 40
+height: 50
+---
+It's impossible to survive here without air conditioning. AC units dot the urban landscape like so many mushrooms upon a desiccated forest.
+<br /><br />
+As I walk on the street, droplets of AC condensation fall in a perennial shower.
+If New York is a concrete jungle, Hong Kong must be a rain forest.

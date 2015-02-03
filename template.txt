@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+
+		<title>Jack's Adventures - {{title}}</title>
+		<link type="text/css" rel="stylesheet" media="all" href="/font/stylesheet.css" />
+		<link type="text/css" rel="stylesheet" media="all" href="/global.css" />
+		<script type="text/javascript">var dirname = "{{dirname}}"  </script>
+		<script src="/json.js"></script>
+		<script src="/jquery-1.11.0.js"></script>
+		<script src="/cookie.js"></script>
+		<script src="/global.js"></script>
+		<script src="/player/html5media.min.js"></script>
+	</head>
+<body>
+	
+<ol id="marker">
+	{{marker}}
+</ol>
+
+<div id="sidebar">
+	<div class="foreground">
+		<div id="profile">
+			<img src="/img/profile.png" alt="my name" />
+		</div>
+		
+		<h1>Jack's<br />Adventures</h1>
+		
+		<ul id="nav">
+			{{navigation}}
+		</ul>
+	</div>
+	
+	<ul id="control">
+	<li><span class="monitor icon"></span>
+		<ul id="resolution">
+			<li data-res="3840"><a href="#">in 4K</a></li>
+			<li data-res="2560"><a href="#">in 1440p</a></li>
+			<li class="active" data-res="1920"><a href="#">in 1080p</a></li>
+			<li data-res="1280"><a href="#">in 720p</a></li>
+			<li data-res="1024"><a href="#">mobile</a></li>
+		</ul>
+	</li>
+	<li><a href="#" id="textbutton" class="active"><span class="toggle icon"></span><span class="text">hide text</span></a></li>
+	<li><a href="#" id="commentbutton"><span class="comment icon"></span>comment</a></li>
+	<li><a href="#" id="sharebutton"><span class="heart icon"></span>share</a></li>
+	<li><a href="#" id="download"><span class="download icon"></span>download</a></li>
+	</ul>
+			
+	<div class="background"></div>
+</div>
+
+<div id="comments">
+<a href="#" id="commentclose" class="close"></a>
+<div id="disqus_thread"></div>
+</div>
+
+<div id="share">
+<div class="addthis_sharing_toolbox"></div>
+</div>
+
+<div id="main">
+	{{content}}
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52772108-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=jack000"></script>
+
+
+</body>
+</html>

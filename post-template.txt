@@ -1,0 +1,11 @@
+<div class="slide" style="background-color: {{datacolor2}}"  data-width="{{datawidth}}" data-height="{{dataheight}}" data-color1="{{datacolor1}}" data-color2="{{datacolor2}}" data-color3="{{datacolor3}}" data-color4="{{datacolor4}}" data-color5="{{datacolor5}}" data-color6="{{datacolor6}}" data-color7="{{datacolor7}}" data-maxresolution="{{datamaxresolution}}">
+	<a name="{{index}}" class="internal"></a>
+	
+	<div class="post" style="top: {{top}}%; left: {{left}}%; width: {{width}}%; height: {{height}}%" {{datapolygon}}>
+		<div class="content">
+		{{post}}
+		</div>
+	</div>
+			
+	{{image}}
+</div>

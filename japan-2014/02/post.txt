@@ -1,0 +1,11 @@
+---
+top: 10
+left: 10
+width: 30
+height: 20
+---
+
+<h2>Tokyo National Museum</h2>
+The museum is undoubtedly one of the must-visit destinations in Tokyo. On display is a plethora of Japanese armour, katana, art and artifacts.
+<br /><br />
+The real attraction however, is the park that surrounds the museum building. In early April it is <em>the best</em> location to view the cherry blossoms.

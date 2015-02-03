@@ -1,0 +1,9 @@
+---
+top: 7
+left: 10
+width: 38
+height: 80
+---
+<h1 style="font-size: 6em">Hong Kong</h1>
+<br />
+Old and new, opulence and poverty - more than any other world-class city, Hong Kong is a place of infinite contrasts
