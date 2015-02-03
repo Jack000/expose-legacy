@@ -16,7 +16,7 @@ how to use:
 
 content management:
 
-1. store photos in folders named 01, 02, etc..
+1. create folders named 01, 02, etc..
 
 2. put photo in the folder, name it full.jpg
 
