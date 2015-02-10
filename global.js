@@ -228,15 +228,25 @@ function scrollcheck(){
 			
 			$('.slide').not(this).find('.image').removeClass('active');
 			
-			// load previous 1 slide, current slide, and the next two slides
+			// load previous slide, current slide, and the next slide
 			$('.slide .image').each(function(i){
-				if(i-index >= -1 && i-index<=2){
+				var set_res = current_resolution;
+				if(parseInt($(this).parent().data('maxresolution')) < current_resolution){
+					set_res = parseInt($(this).parent().data('maxresolution'));
+				}
+				
+				if(i-index >= -1 && i-index<=1){
 					num = pad(i+1,2);
-					if($(this).is('video')){
-						$(this).prop('src','/'+dirname+'/'+num+'/'+current_resolution+'.mp4');
+					if($(this).is('video')){ // video eats up memory, do not save previous one
+						if(i-index > -1){
+							$(this).prop('src','/'+dirname+'/'+num+'/'+set_res+'.mp4');
+						}
+						else{
+							$(this).prop('src','//:0');
+						}
 					}
 					else if($(this).is('img')){
-						$(this).prop('src','/'+dirname+'/'+num+'/'+current_resolution+'.jpg');
+						$(this).prop('src','/'+dirname+'/'+num+'/'+set_res+'.jpg');
 					}
 					else if($(this).is('span')){
 						// flash fallback
@@ -246,7 +256,7 @@ function scrollcheck(){
 						var config = $.parseJSON(configjson);
 						var furl = config.playlist[0].url;
 						if(furl.length <= 11 || obj.prop('data').length <= 11){
-							config.playlist[0].url = '/'+dirname+'/'+num+'/'+current_resolution+'.mp4';
+							config.playlist[0].url = '/'+dirname+'/'+num+'/'+set_res+'.mp4';
 							param.prop('value','config='+JSON.stringify(config));
 							obj.prop('data','/player/flowplayer.swf?cachebreaker='+(new Date().getTime()));
 						}
@@ -254,6 +264,7 @@ function scrollcheck(){
 					$(this).removeClass('blank');
 				}
 				else{
+					// keeping all images takes too much memory, reset as we go along
 					if($(this).is('video') || $(this).is('img')){
 						$(this).prop('src','//:0');
 					}

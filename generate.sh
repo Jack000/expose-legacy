@@ -181,8 +181,8 @@ do
 			
 			padded_num=$(echo $subdir | awk -F'/' '{print $2}')
 			
-			if [ ! -f "$subdir"/"${dir[$pageindex]}-$padded_num".zip ]
-			then
+			#if [ ! -f "$subdir"/"${dir[$pageindex]}-$padded_num".zip ] # something wrong with this on windows
+			#then
 				
 			  if [ -f "$subdir"/full.jpg ]
 			  then
@@ -205,7 +205,7 @@ do
 					rm -rf "${dir[$pageindex]}-$padded_num"
 					cd "$topdir"
 			  fi
-		  fi
+		    #fi
 	  fi
 	done
 	
