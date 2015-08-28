@@ -1,4 +1,7 @@
 # Expose
+
+note: this is now deprecated. Try [Expose 2.0](https://github.com/Jack000/Expose-2.0)
+
 Dead simple static site generator for photo/editorial mix content, exactly like my personal site at www.jack.ventures
 
 Note: this is 3 bash scripts I wrote over a weekend for personal use, expect hacks
